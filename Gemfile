@@ -14,10 +14,16 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'spring',        group: :development
 gem 'bootstrap-generators', '~> 3.3.1'
 gem 'devise'
 gem 'acts_as_votable', '~> 0.10.0'
+
+group :development do
+	gem 'spring'
+  gem "better_errors"
+  gem 'pry-rails'
+  gem "binding_of_caller"
+end
 
 
 # Use unicorn as the app server
