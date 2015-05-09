@@ -8,6 +8,9 @@ class LinksController < ApplicationController
   end
 
   def show
+    @link = Link.find(params[:id])
+    @comments = @link.comments.all
+    @comment = @link.comments.build
   end
 
   def new
@@ -63,6 +66,10 @@ def downvote
   @link = Link.find(params[:id])
   @link.downvote_from current_user
   redirect_to @link
+end
+
+def lefty
+  
 end
 
   private
