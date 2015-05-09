@@ -4,7 +4,6 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Url</th>
       <th>Comments</th>
       <th>Vote</th>            
       <th>Score</th>    
@@ -15,8 +14,7 @@
   <tbody>
     <% @links.each do |link| %>
       <tr>
-        <td><%= link.title %></td>
-        <td><%= link.url %></td>
+        <td><%= link_to link.title, "http://" + link.url, :target => "_blank"  %></td>
         <td><%= link_to link.comments.count, link %></td>
         <td><%= link_to "Upvote", like_link_path(link), method: :put %></td>
         <td><%= link.score  %></td>
