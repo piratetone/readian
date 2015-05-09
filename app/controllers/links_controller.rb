@@ -4,7 +4,8 @@ class LinksController < ApplicationController
 
 
   def index
-    @links = Link.all
+    # @links = Link.all
+    @links = Link.order(:cached_votes_up => :desc)
   end
 
   def show
