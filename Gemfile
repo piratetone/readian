@@ -14,6 +14,8 @@ gem 'bootstrap-generators', '~> 3.3.1'
 gem 'devise'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form'
+gem 'rails_12factor'
+
 
 group :development do
 	gem 'spring'
