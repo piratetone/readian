@@ -6,3 +6,6 @@
 * Adding left and right voting
 * Update index action for Links and add action for controversial, lefty, righty, etc...
 
+* Styles - 
+http://www.colourlovers.com/palette/1398740/Fire_and_Ice
+http://www.colourlovers.com/palette/2843567/%E2%9D%A4_Navy_and_Red

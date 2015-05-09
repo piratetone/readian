@@ -12,9 +12,10 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
+          <li class="active"><a href="/">Top</a></li>
           <% if user_signed_in? %>
-          <li><%= link_to "Submit Link", new_link_path %></li>
+          <li id="left-leaning"><%= link_to "Left Leaning", "#" %></li>
+          <li id="right-leaning"><%= link_to "Right Leaning", "#" %></li>
           <li><%= link_to "Account", edit_user_registration_path %></li>
           <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
           <% else %>
