@@ -1,27 +1,25 @@
-<p id="notice"><%= notice %></p>
+<section class="link-page">
+  <p id="notice"><%= notice %></p>
+  <!-- Link Content -->
+  <p class="link-paragraph">Title:</p>
+  <h2><%= link_to @link.title, @link.url, :target => "_blank"  %></h2>
+  <% if @link.user = current_user %>
+  <%= link_to 'Edit', edit_link_path(@link), :class => "link-paragraph" %>
+  <% end %>
+  <hr>
 
-<p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
+  <!-- Comments -->
+  <h3>Comments</h3>
+  <% @comments.each do |comment| %>
+    <div>
+      <strong><%= comment.user_name %></strong>
+      <br />
+      <p><%= comment.body %></p>
+      <% if comment.user_name = current_user %>
+      <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      <% end %>
+    </div>
+  <% end %>
+  <%= render 'comments/form' %>
 
-<p>
-  <strong>Url:</strong>
-  <%= @link.url %>
-</p>
-
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', links_path %>
-
-<h3>Comments</h3>
-<% @comments.each do |comment| %>
-  <div>
-    <strong><%= comment.user_name %></strong>
-    <br />
-    <p><%= comment.body %></p>
-    <% if comment.user_name = current_user %>
-    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-    <% end %>
-  </div>
-<% end %>
-<%= render 'comments/form' %>
+</section>
