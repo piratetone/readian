@@ -4,9 +4,9 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Comments</th>
-      <th>Vote</th>            
-      <th>Score</th>    
+      <th class="links-index-text">Comments</th>
+      <th class="links-index-text">Vote</th>            
+      <th class="links-index-text">Score</th>    
       <th colspan="7"></th>
     </tr>
   </thead>
@@ -15,11 +15,11 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link_to link.title, "http://" + link.url, :target => "_blank"  %></td>
-        <td><%= link_to link.comments.count, link %></td>
-        <td><%= link_to "Upvote", like_link_path(link), method: :put %></td>
-        <td><%= link.score  %></td>
+        <td class="links-index-text"><%= link_to link.comments.count, link %></td>
+        <td class="links-index-text"><%= link_to "Upvote", like_link_path(link), method: :put %></td>
+        <td class="links-index-text"><%= link.score  %></td>
         <% if link.user = current_user %>
-        <td><%= link_to 'Edit', edit_link_path(link) %></td>
+        <td class="links-index-text"><%= link_to 'Edit', edit_link_path(link) %></td>
         <% end %>
       </tr>
     <% end %>
