@@ -15,7 +15,7 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link_to link.title, link.url, :target => "_blank"  %></td>
-        <td class="links-index-text"><%= link_to link.comments.count, link %></td>
+        <td class="links-index-text"><span class="fa fa-comments"></span><%= link_to link.comments.count, link %></td>
         <td class="links-index-text"><%= link_to "Upvote", like_link_path(link), method: :put %></td>
         <td class="links-index-text"><%= link.score  %></td>
         <% if link.user = current_user %>

@@ -15,6 +15,7 @@ gem 'devise'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form'
 gem 'rails_12factor'
+gem "font-awesome-rails"
 
 
 group :development do

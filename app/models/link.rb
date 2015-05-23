@@ -11,4 +11,8 @@ class Link < ActiveRecord::Base
   	self.get_upvotes.size - self.get_downvotes.size
 	end
 	
+	def lefty
+		self.get_upvotes.size
+	end
+
 end

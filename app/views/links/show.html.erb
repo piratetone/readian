@@ -5,6 +5,10 @@
   <% if @link.user = current_user %>
   <%= link_to 'Edit', edit_link_path(@link), :class => "link-paragraph" %>
   <% end %>
+
+  <p><%= link_to "Upvote", like_link_path(@link), method: :put %></p>
+  <p><%= @link.score  %></p>
+    <p><%= link_to "Lefty", lefty_link_path(@link), method: :put %></p>
   <hr>
 
   <!-- Comments -->

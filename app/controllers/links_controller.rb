@@ -59,8 +59,8 @@ class LinksController < ApplicationController
 def upvote
   @link = Link.find(params[:id])
   @link.liked_by current_user
-  #redirect_to @link
-  redirect_to action: "index"
+  redirect_to @link
+  #redirect_to action: "index"
 end
 
 def downvote
@@ -70,7 +70,15 @@ def downvote
 end
 
 def lefty
-  
+  @link = Link.find(params[:id])
+  @link.downvote_from current_user
+  redirect_to @link
+end
+
+def righty
+  @link = Link.find(params[:id])
+  @link.liked_by current_user
+  redirect_to @link
 end
 
   private
