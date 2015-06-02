@@ -21,8 +21,4 @@ Outstanding tasks can be found here - https://www.pivotaltracker.com/n/projects/
 * After merging with "master" we'll deploy to the live site :D
 
 ===
-Everyone is encouraged to help improve this project. Here are a few ways you can help:
-
-
-
-
+Everyone is encouraged to help improve this project!
