@@ -1,5 +1,5 @@
 class LinksController < ApplicationController
-  before_action :set_link, only: [:show, :edit, :update, :destroy]
+  #before_action :set_link, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, except: [:index, :show]
 
 
@@ -69,13 +69,14 @@ def downvote
   redirect_to @link
 end
 
-def lefty
+def leftvote
   @link = Link.find(params[:id])
-  @link.downvote_from current_user
+  @political_points = @link.political_points - 1.0
+  pry
   redirect_to @link
 end
 
-def righty
+def rightvote
   @link = Link.find(params[:id])
   @link.liked_by current_user
   redirect_to @link

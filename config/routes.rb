@@ -6,8 +6,8 @@ Rails.application.routes.draw do
      member do
      put "like", to: "links#upvote"
      put "dislike", to: "links#downvote"
-     put "lefty", to: "links#lefty"
-     put "righty", to: "links#righty"
+     put "leftvote", to: "links#leftvote"
+     put "rightvote", to: "links#rightvote"
    end
  end
 
