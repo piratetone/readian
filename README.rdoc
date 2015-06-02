@@ -2,7 +2,7 @@ This is an opensource project being worked on by the /r/Ruby community
 
 Outstanding tasks can be found here - https://www.pivotaltracker.com/n/projects/1358890
 
-== Contributing ==
+== Contributing
 
 * Fork the repository and clone it locally. 
 
@@ -20,13 +20,8 @@ Outstanding tasks can be found here - https://www.pivotaltracker.com/n/projects/
 
 * After merging with "master" we'll deploy to the live site :D
 
-==========
+===
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
-
-* Report bugs
-* Fix bugs and submit pull requests
-* Write, clarify, or fix documentation
-* Suggest or add new features
 
 
 
