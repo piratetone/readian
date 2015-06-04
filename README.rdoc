@@ -6,8 +6,6 @@ Outstanding tasks can be found here - https://www.pivotaltracker.com/n/projects/
 
 * Fork the repository and clone it locally. 
 
-* Update "config/example_database.yml" with your local database information
-
 * Create a "feature-name" branch for your edits
 
 * Be clear about what problem is occurring and how someone can recreate that problem or why your feature will help. Be explicit in your commits and communicate with questions on the Pivotal Tracker.
