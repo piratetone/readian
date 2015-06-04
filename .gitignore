@@ -16,3 +16,8 @@
 /tmp
 
 /config/database.yml
+
+# Remove floobits
+
+*.floo
+*.flooignore
