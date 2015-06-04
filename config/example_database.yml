@@ -1,3 +1,8 @@
+# This is an example Database.yml File - 
+
+# 1. Create a new Database.yml file
+# 2. Update the database name and password below.
+
 # PostgreSQL. Versions 8.2 and up are supported.
 #
 # Install the pg driver:
