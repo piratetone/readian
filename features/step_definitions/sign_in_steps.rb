@@ -7,9 +7,10 @@ Given(/^I click "(.*?)"$/) do |target|
 end
 
 When(/^I fill in the form with my login details$/) do
-  pending # express the regexp above with the code you wish you had
+  page.fill_in "Email", with: "test@test.com"
+  page.fill_in "Password", with: "12345678"
 end
 
 Then(/^I should be signed in$/) do
-  pending # express the regexp above with the code you wish you had
+  expect(page.has_content?("Signed in successfully.")).to be true
 end

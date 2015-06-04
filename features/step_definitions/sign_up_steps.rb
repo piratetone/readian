@@ -1,5 +1,12 @@
 Given(/^that I have an account$/) do
-  pending # express the regexp above with the code you wish you had
+  steps %Q{
+    Given that I am on the homepage
+    And I click "Sign Up"
+    When I fill in the form with my sign up details
+    And I click "Sign up"
+    Then there should be 1 users in the database
+    And be redirected to the homepage
+  }
 end
 
 When(/^I fill in the form with my sign up details$/) do

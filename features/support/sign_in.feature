@@ -2,9 +2,10 @@ Feature: Sign in
 
   Scenario: A visitor signs in
     Given that I have an account
-      And that I am on the homepage
+      And I click "Sign Out"
       And I click "Sign In"
     When I fill in the form with my login details
+      And I click "Log in"
     Then I should be signed in
 
   Scenario: A visitor signs up
