@@ -11,5 +11,6 @@ Feature: Sign in
     Given that I am on the homepage
       And I click "Sign Up"
     When I fill in the form with my sign up details
-    Then I should have an account
+      And I click "Sign up"
+    Then there should be 1 users in the database
       And be redirected to the homepage
