@@ -10,6 +10,6 @@ Feature: Sign in
   Scenario: A visitor signs up
     Given that I am on the homepage
       And I click "Sign Up"
-    When I fill in the form with my login details
+    When I fill in the form with my sign up details
     Then I should have an account
       And be redirected to the homepage
