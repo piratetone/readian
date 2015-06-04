@@ -16,7 +16,12 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form'
 gem 'rails_12factor'
 gem "font-awesome-rails"
-gem 'cucumber'
+
+group :test, :development do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
 
 
 group :development do
