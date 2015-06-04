@@ -1,14 +1,26 @@
-== To Dos
+This is an opensource project being worked on by the /r/Ruby community 
 
-* Adding username to User model
-* Displaying username for comments and link submissions
+Outstanding tasks can be found here - https://www.pivotaltracker.com/n/projects/1358890
 
-* Adding left and right voting
-* Update index action for Links and add action for controversial, lefty, righty, etc...
+== Contributing
 
-* Styles - 
-http://www.colourlovers.com/palette/1398740/Fire_and_Ice
-http://www.colourlovers.com/palette/2843567/%E2%9D%A4_Navy_and_Red
+* Fork the repository and clone it locally. 
 
-* Bugs -
-Fix link URL issue associated with http:// and www.
+* Update "config/example_database.yml" with your local database information
+
+* Create a "feature-name" branch for your edits
+
+* Be clear about what problem is occurring and how someone can recreate that problem or why your feature will help. Be explicit in your commits and communicate with questions on the Pivotal Tracker.
+
+* It’s best to test. Run your changes against any existing tests if they exist and create new ones when needed. Whether tests exist or not, make sure your changes don’t break the existing project.
+
+* Contribute in the style of the project to the best of your abilities. 
+
+* Create a pull request to submit your feature to the "dev" branch
+
+* We'll check tests, validate, merge with the "master" branch
+
+* After merging with "master" we'll deploy to the live site :D
+
+===
+Everyone is encouraged to help improve this project!
