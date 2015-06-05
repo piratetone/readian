@@ -5,7 +5,7 @@ class LinksController < ApplicationController
 
   def index
     # @links = Link.all
-    @links = Link.order(:cached_votes_up => :desc)
+    @links = Link.order(:cached_votes_up => :desc).paginate(:page => params[:page], :per_page => 10)
   end
 
   def show
