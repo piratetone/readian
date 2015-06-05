@@ -17,7 +17,7 @@ gem 'simple_form'
 gem 'rails_12factor'
 gem "font-awesome-rails"
 gem 'cucumber'
-
+gem 'will_paginate'
 
 group :development do
 	gem 'spring'
