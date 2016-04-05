@@ -71,9 +71,9 @@ end
 
 def leftvote
   @link = Link.find(params[:id])
-  @political_points = @link.political_points - 1.0
-  pry
+  @link.political_points = -1.0
   redirect_to @link
+  pry
 end
 
 def rightvote
