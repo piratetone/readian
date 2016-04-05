@@ -1,0 +1,10 @@
+/Users/garyspagnoli/.rvm/rubies/ruby-2.1.1/bin/ruby -r ./siteconf20160405-20645-vfc27w.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
+installing default libraries
